@@ -85,7 +85,7 @@ body {
   margin-bottom: 50px;
 }
 
-.header {
+.header, .side-bar-stories {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -93,7 +93,7 @@ body {
   font-size: 14px;
 }
 
-.header img {
+.header img, .side-bar-stories img, .side-bar-user img {
   width: 34px;
   height: 34px;
   border-radius: 50%;
@@ -148,13 +148,20 @@ input[type=text] {
 }
 
 .side-bar {
+  display: flex;
+  flex-direction: column;
   background-color: #F4F4F4;
   color: white;
   margin-left: 20px;
   width: 23%;
-  height: 130px;
-  text-align: center;
-  font-size: 30px;
+  height: 50%;
   box-shadow: 0 4px 2px -2px #E6E6E8;
   border: 1px solid #E6E6E8;
+  color: black;
+}
+
+.side-bar-user {
+  display: flex;
+  height: 25%;
+  background-color: blue
 }
