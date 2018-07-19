@@ -93,7 +93,7 @@ body {
   font-size: 14px;
 }
 
-.header img, .side-bar-stories img, .side-bar-user img {
+.header img {
   width: 34px;
   height: 34px;
   border-radius: 50%;
@@ -150,18 +150,28 @@ input[type=text] {
 .side-bar {
   display: flex;
   flex-direction: column;
-  background-color: #F4F4F4;
   color: white;
   margin-left: 20px;
   width: 23%;
   height: 50%;
   box-shadow: 0 4px 2px -2px #E6E6E8;
-  border: 1px solid #E6E6E8;
   color: black;
 }
 
 .side-bar-user {
   display: flex;
-  height: 25%;
-  background-color: blue
+  padding-bottom: 15px;
+  font-size: 14px;
+  border-bottom: 1px solid #E6E6EA;
+}
+
+.side-bar-user img, .side-bar-stories img {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  border: 1px solid #E6E6EA;
+}
+
+.links {
+  font-size: 10px;
 }
