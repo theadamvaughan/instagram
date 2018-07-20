@@ -175,3 +175,11 @@ input[type=text] {
 .links {
   font-size: 10px;
 }
+
+.links a {
+  text-decoration: none;
+}
+
+.links a:visited, .links a:link {
+  color: black;
+}
