@@ -183,3 +183,11 @@ input[type=text] {
 .links a:visited, .links a:link {
   color: black;
 }
+
+.side-bar-content {
+  -webkit-flex: 1 1 auto;
+  overflow-y: auto;
+  height: 300px; /*here the height is set to 0px*/
+}
+
+.side-bar-stories {
