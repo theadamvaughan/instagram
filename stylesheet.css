@@ -164,6 +164,10 @@ input[type=text] {
   height: 50%;
   box-shadow: 0 4px 2px -2px #E6E6E8;
   color: black;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 90px;
+  align-self: flex-start;
 }
 
 .side-bar-user {
