@@ -165,15 +165,24 @@ input[type=text] {
   border-bottom: 1px solid #E6E6EA;
 }
 
-.side-bar-user img, .side-bar-stories img {
+.side-bar-user img {
   width: 55px;
   height: 55px;
   border-radius: 50%;
   border: 1px solid #E6E6EA;
 }
 
+.side-bar-stories img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  padding: 3px;
+  border: 3px solid red;
+}
+
 .links {
   font-size: 10px;
+  padding: 15px 0;
 }
 
 .links a {
@@ -187,7 +196,13 @@ input[type=text] {
 .side-bar-content {
   -webkit-flex: 1 1 auto;
   overflow-y: auto;
-  height: 300px; /*here the height is set to 0px*/
+  height: 300px;
+  border-bottom: 1px solid #E6E6EA;
 }
 
-.side-bar-stories {
+.side-bar-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 15px 0;
+}
