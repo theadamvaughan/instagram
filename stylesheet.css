@@ -67,30 +67,32 @@ body {
 
 /* main */
 
-.content {
+.content, .container, .user, .side-bar {
   display: flex;
   flex-direction: column;
+}
+
+.main, .header, .side-bar-stories, .media, .interactive, .side-bar-title {
+  display: flex;
+  flex-direction: row;
+}
+
+.content {
   justify-content: center;
   width: 50%;
 }
 
 .main {
-  display: flex;
-  flex-direction: row;
   justify-content: center;
   margin-top: 10%;
 }
 
 .container {
-  display: flex;
-  flex-flow: column;
   background-color: white;
   margin-bottom: 50px;
 }
 
 .header, .side-bar-stories {
-  display: flex;
-  flex-direction: row;
   align-items: center;
 }
 
@@ -118,8 +120,6 @@ body {
 }
 
 .user {
-  display: flex;
-  flex-direction: column;
   padding-left: 10px;
   justify-content: center;
 }
@@ -130,11 +130,6 @@ body {
 
 .image img {
   width: 100%;
-}
-
-.media, .interactive {
-  display: flex;
-  flex-direction: row;
 }
 
 .last {
@@ -172,8 +167,6 @@ input[type=text]:focus {
 }
 
 .side-bar {
-  display: flex;
-  flex-direction: column;
   color: white;
   margin-left: 20px;
   width: 23%;
@@ -225,8 +218,6 @@ input[type=text]:focus {
 }
 
 .side-bar-title {
-  display: flex;
-  flex-direction: row;
   justify-content: space-between;
   padding: 15px 0;
 }
