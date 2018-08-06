@@ -47,8 +47,12 @@ body {
   width: 215px;
 }
 
-#search, .container, .header img, #comment, .side-bar-user, .side-bar-user img {
+#search, .container, .header img, #comment, .side-bar-user img {
   border: 1px solid #E6E6EA;
+}
+
+.side-bar-user, .side-bar-content {
+  border-bottom: 1px solid #E6E6EA;
 }
 
 #search {
@@ -218,7 +222,6 @@ input[type=text]:focus {
   -webkit-flex: 1 1 auto;
   overflow-y: auto;
   height: 300px;
-  border-bottom: 1px solid #E6E6EA;
 }
 
 .side-bar-title {
