@@ -1,12 +1,9 @@
 body {
-  display: flex;
-  flex-direction: column;
   background-color: #F8F8F9;
   font-family: Arial;
 }
 
 .navigation {
-  display: flex;
   align-items: center;
   background-color: white;
   margin: 0 -10px;
@@ -14,11 +11,9 @@ body {
   z-index: 1;
   top: 0;
   left: 0;
-  width: 100%;
 }
 
 .top-menu {
-  display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 13%;
@@ -32,7 +27,6 @@ body {
 }
 
 .top-right {
-  display: flex;
   width: 221px;
   justify-content: flex-end;
 }
@@ -56,7 +50,6 @@ body {
 }
 
 #search {
-  width: 100%;
   height: 30px;
   padding: 12px 20px;
   box-sizing: border-box;
@@ -67,23 +60,25 @@ body {
 
 /* main */
 
-.content, .container, .user, .side-bar {
+.content, .container, .user, .side-bar, body {
   display: flex;
   flex-direction: column;
 }
 
-.main, .header, .side-bar-stories, .media, .interactive, .side-bar-title {
+.main, .header, .side-bar-stories, .media, .interactive, .side-bar-title, .top-right, .top-menu, .navigation, .last, .side-bar-user {
   display: flex;
-  flex-direction: row;
 }
 
-.content {
+.content, .main {
   justify-content: center;
+}
+
+
+.content {
   width: 50%;
 }
 
 .main {
-  justify-content: center;
   margin-top: 10%;
 }
 
@@ -128,13 +123,11 @@ body {
   font-weight: bold;
 }
 
-.image img {
+.image img, .last, #search, .navigation {
   width: 100%;
 }
 
 .last {
-  width: 100%;
-  display: flex;
   justify-content: flex-end;
 }
 
@@ -179,7 +172,6 @@ input[type=text]:focus {
 }
 
 .side-bar-user {
-  display: flex;
   padding-bottom: 6px;
   font-size: 14px;
 }
